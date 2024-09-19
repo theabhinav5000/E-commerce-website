@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All product - Redstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="image/logo.png" width="124px">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="kart.html"><img src="image/cart.png" width="30px" height="30px"></a> 
+            <img src="image/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div> 
+
+    <!-----cart item details----->
+
+    <div class="small-container cart-page">
+
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="image/buy-1.jpg">
+                        <div>
+                            <p>Red Printed T-Shirt</p>
+                            <small>Price: Rs 40.00</small><br>
+                            <a href="">remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type=" number" value="1"></td>
+                <td>Rs 40.0</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="image/buy-2.jpg">
+                        <div>
+                            <p>Red Printed T-Shirt</p>
+                            <small>Price: Rs 60.00</small><br>
+                            <a href="">remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type=" number" value="1"></td>
+                <td>Rs 60.0</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="image/buy-3.jpg">
+                        <div>
+                            <p>Red Printed T-Shirt</p>
+                            <small>Price: Rs 50.00</small><br>
+                            <a href="">remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type=" number" value="1"></td>
+                <td>Rs 50.0</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>Rs 150.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>Rs 35.00</td>
+                </tr>
+                <tr>
+                    <td>total</td>
+                    <td>Rs 185.00</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+<!-------footer------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>Download for Android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="image/play-store.png">
+                    <img src="image/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                 <img src="image/logo-white.png">
+                <p>our purpose is to sustainably make the pleasure and 
+                   benifits of sports Accessble to the man </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                 <ul>
+                    <li>Coupons</li>
+                    <li>Blog post</li>
+                    <li>return policy</li>
+                    <li>Join Affiliate</li>
+                 </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                 <ul>
+                    <li>Facebook</li>
+                    <li>Twiter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                 </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Gmail-ncert400@gmail.com</p>
+    </div>
+</div>
+
+<!-------------js menu toggle----->
+
+<script>
+    var menuitems = document.getElementById("menuitems");
+
+    menuitems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(menuitems.style.maxHeight == "0px")
+        {
+            menuitems.style.maxHeight = "200px";
+        }
+        else{
+            menuitems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>
